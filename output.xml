@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.11.0 on win32)" generated="20221214 14:50:30.837" rpa="false">
+<suite id="s1" name="SampleProject" source="D:\Eclipse\eclipse-workspace\SampleProject">
+<suite id="s1-s1" name="Testcases" source="D:\Eclipse\eclipse-workspace\SampleProject\Testcases">
+<suite id="s1-s1-s1" name="TC 021-024" source="D:\Eclipse\eclipse-workspace\SampleProject\Testcases\TC_021-024.robot">
+<kw name="Set Screenshot Directory" library="SeleniumLibrary" type="setup">
+<doc>Sets the directory for captured screenshots.</doc>
+<arguments>
+<arg>SampleProject\Screenshots</arg>
+</arguments>
+<status status="PASS" starttime="20221214 14:50:31.032" endtime="20221214 14:50:31.033"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="TC_024 Verify the add new investment">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="setup">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20221214 14:50:31.034" endtime="20221214 14:50:31.034"></status>
+</kw>
+<kw name="App_Launch" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20221214 14:50:31.035" level="INFO">Opening browser 'edge' to base url 'https://credor-app.azurewebsites.net/'.</msg>
+<status status="PASS" starttime="20221214 14:50:31.035" endtime="20221214 14:51:04.903"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221214 14:51:04.904" endtime="20221214 14:51:06.030"></status>
+</kw>
+<status status="PASS" starttime="20221214 14:50:31.034" endtime="20221214 14:51:06.031"></status>
+</kw>
+<kw name="Loging_in" library="keyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${login_user}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:06.033" level="INFO">Typing text 'admin@credor.com' into text field '//input[@id='login_email']'.</msg>
+<status status="PASS" starttime="20221214 14:51:06.032" endtime="20221214 14:51:09.200"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${login_pass}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:09.203" level="INFO">Typing password into text field '//input[@id='login_password']'.</msg>
+<msg timestamp="20221214 14:51:11.261" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221214 14:51:12.327" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221214 14:51:09.201" endtime="20221214 14:51:12.328"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${login_btn}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:12.331" level="INFO">Clicking element '//button[@id='login_submit']'.</msg>
+<status status="PASS" starttime="20221214 14:51:12.329" endtime="20221214 14:51:14.437"></status>
+</kw>
+<status status="PASS" starttime="20221214 14:51:06.031" endtime="20221214 14:51:14.438"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20221214 14:51:18.440" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221214 14:51:14.438" endtime="20221214 14:51:18.440"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${rahul_shan}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:18.443" level="INFO">Clicking element '//td[normalize-space()='Ragul Shanmugam']'.</msg>
+<status status="PASS" starttime="20221214 14:51:18.441" endtime="20221214 14:51:20.549"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${act_scrl}</arg>
+</arguments>
+<status status="PASS" starttime="20221214 14:51:20.549" endtime="20221214 14:51:22.866"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${investment}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:22.869" level="INFO">Clicking element '//a[@id='investments-tab']'.</msg>
+<status status="PASS" starttime="20221214 14:51:22.867" endtime="20221214 14:51:24.961"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${add_invest}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:24.964" level="INFO">Clicking button '//button[@id='investment_addInvestment']'.</msg>
+<status status="PASS" starttime="20221214 14:51:24.962" endtime="20221214 14:51:30.112"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${offer_drpdwn}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:30.115" level="INFO">Clicking element '//select[@id='investment_addInvestmentshow_aif_offeringname']'.</msg>
+<status status="PASS" starttime="20221214 14:51:30.113" endtime="20221214 14:51:32.228"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${offer_drpdwn}</arg>
+<arg>test2offer</arg>
+</arguments>
+<msg timestamp="20221214 14:51:32.231" level="INFO">Selecting options from selection list '//select[@id='investment_addInvestmentshow_aif_offeringname']' by label test2offer.</msg>
+<status status="PASS" starttime="20221214 14:51:32.229" endtime="20221214 14:51:40.425"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${invest_amt}</arg>
+<arg>50000.00</arg>
+</arguments>
+<msg timestamp="20221214 14:51:40.427" level="INFO">Typing text '50000.00' into text field '//input[@id='investment_addInvestmentshow_aif_investmentamount']'.</msg>
+<status status="PASS" starttime="20221214 14:51:40.426" endtime="20221214 14:51:43.587"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${profile_type}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:43.590" level="INFO">Clicking element '//select[@id='investment_addInvestmentshow_aif_profiletype']'.</msg>
+<status status="PASS" starttime="20221214 14:51:43.588" endtime="20221214 14:51:45.660"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${profile_type}</arg>
+<arg>Ragul S</arg>
+</arguments>
+<msg timestamp="20221214 14:51:45.663" level="INFO">Selecting options from selection list '//select[@id='investment_addInvestmentshow_aif_profiletype']' by label Ragul S.</msg>
+<status status="PASS" starttime="20221214 14:51:45.661" endtime="20221214 14:51:53.836"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${profile_status}</arg>
+</arguments>
+<msg timestamp="20221214 14:51:53.839" level="INFO">Clicking element '//select[@id='investment_addInvestmentshow_aif_status']'.</msg>
+<status status="PASS" starttime="20221214 14:51:53.837" endtime="20221214 14:51:55.958"></status>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>${profile_status}</arg>
+<arg>Declined</arg>
+</arguments>
+<msg timestamp="20221214 14:51:55.961" level="INFO">Selecting options from selection list '//select[@id='investment_addInvestmentshow_aif_status']' by label Declined.</msg>
+<status status="PASS" starttime="20221214 14:51:55.959" endtime="20221214 14:52:04.123"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${funcrecd}</arg>
+<arg>12-Dec-2022</arg>
+</arguments>
+<msg timestamp="20221214 14:52:04.127" level="INFO">Typing text '12-Dec-2022' into text field '//input[@id='investment_addInvestmentshow_aif_funcrecd']'.</msg>
+<status status="PASS" starttime="20221214 14:52:04.124" endtime="20221214 14:52:07.277"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20221214 14:52:11.280" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221214 14:52:07.278" endtime="20221214 14:52:11.280"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${doc_sign}</arg>
+<arg>14-Dec-2022</arg>
+</arguments>
+<msg timestamp="20221214 14:52:11.283" level="INFO">Typing text '14-Dec-2022' into text field '//input[@id='investment_addInvestmentshow_aif_docssigned']'.</msg>
+<status status="PASS" starttime="20221214 14:52:11.281" endtime="20221214 14:52:14.441"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20221214 14:52:18.444" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20221214 14:52:14.442" endtime="20221214 14:52:18.445"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${add_x_btn}</arg>
+</arguments>
+<msg timestamp="20221214 14:52:18.447" level="INFO">Clicking button '//button[@aria-label='Close']'.</msg>
+<status status="PASS" starttime="20221214 14:52:18.445" endtime="20221214 14:52:23.580"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221214 14:52:23.581" endtime="20221214 14:52:26.708"></status>
+</kw>
+<status status="PASS" starttime="20221214 14:50:31.033" endtime="20221214 14:52:26.709" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20221214 14:50:30.880" endtime="20221214 14:52:26.710"></status>
+</suite>
+<status status="PASS" starttime="20221214 14:50:30.878" endtime="20221214 14:52:26.714"></status>
+</suite>
+<status status="PASS" starttime="20221214 14:50:30.865" endtime="20221214 14:52:26.715"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="SampleProject">SampleProject</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testcases">SampleProject.Testcases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="TC 021-024">SampleProject.Testcases.TC 021-024</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
